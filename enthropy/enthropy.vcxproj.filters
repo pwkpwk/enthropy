@@ -18,5 +18,19 @@
     <ClCompile Include="enthropy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="precompiled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="precompiled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntropyBitCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntropyAccumulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -21,6 +21,8 @@
     <BuildOutputRelativePath>$(ProjectName)\$(Platform)\$(Configuration)\</BuildOutputRelativePath>
     <IntDir>$(BuildBasePath)tmp\$(BuildOutputRelativePath)</IntDir>
     <OutDir>$(BuildBasePath)output\$(BuildOutputRelativePath)</OutDir>
+    <PrecompiledHeader>Use</PrecompiledHeader>
+    <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
@@ -84,6 +86,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="enthropy.cpp" />
+    <ClCompile Include="precompiled.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <PrecompiledHeaderFile>precompiled.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EntropyAccumulator.h" />
+    <ClInclude Include="EntropyBitCount.h" />
+    <ClInclude Include="precompiled.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
